@@ -12,7 +12,7 @@ app.post('/webhook', (req, res) => {
   console.log('Received webhook push event.');
 
   // Run the post-receive hook to deploy the code
-  exec('../deploy.sh', (error, stdout, stderr) => {
+  exec('/home/ubuntu/weebHook-pipeline/deploy.log/deploy.sh', (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`);
 

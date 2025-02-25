@@ -1,9 +1,9 @@
 #!/bin/bash
 # Path to your project
-WORK_DIR=/path/to/your/project
+WORK_DIR=/home/ubuntu/spherebot
 
 # Log file
-LOG_FILE=/path/to/deploy.log
+LOG_FILE=/home/ubuntu/weebHook-pipeline/deploy.log
 
 # Start logging
 exec 1> >(tee -a "$LOG_FILE")
